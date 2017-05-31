@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="blended_layout.css">
+<title>Page Title</title>
+<meta name="description" content="Write some words to describe your html page">
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="worksty.css">
+<style>
+.cus-header {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal 76px/1 "alegreya-sc", Helvetica, sans-serif;
+  color: rgba(255,0,16,0.71);
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+.cus-header2 {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 0;
+  left: 10px;
+  border: none;
+  font: normal 30px/1 "Trebuchet MS", Helvetica, sans-serif;
+  color: rgba(19,19,242,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: url("http://enjoycss.com/bg-img/default/3_6.png"), rgba(193,46,46,1);
+  background-position: 50% 50%;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+}
+*{
+padding : 0;
+margin : 0;
+border : 0;
+}
+body{
+background-image : url(' bi-background-bottom.png ');
+background-attachment : fixed;
+background-size : 100% auto;
+
+}
+.blended_grid{
+display : block;
+width : 1000px;
+overflow : auto;
+margin : 100px auto 0 auto;
+}
+.pageColumnLeft{
+background-color : rgb(255, 255, 255);
+float : left;
+clear : none;
+height : 600px;
+width : 400px;
+}
+.pageColumnMid{
+background-color : rgb(255, 255, 255);
+float : left;
+clear : none;
+height : 600px;
+width : 400px;
+}
+.pageColumnRight{
+background-color : rgb(255, 255, 255);
+float : left;
+clear : none;
+height : 600px;
+width : 200px;
+}
+
+
+input[type=checkbox].css-checkbox {
+							position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+						}
+
+						input[type=checkbox].css-checkbox + label.css-label {
+							padding-left:37px;
+							height:32px; 
+							display:inline-block;
+							line-height:32px;
+							background-repeat:no-repeat;
+							background-position: 0 0;
+							font-size:25px;
+							vertical-align:middle;
+							cursor:pointer;
+
+						}
+
+						input[type=checkbox].css-checkbox:checked + label.css-label {
+							background-position: 0 -32px;
+						}
+						label.css-label {
+				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_c1a4f40d98f1c23d1ad84d2af9c314be.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+
+.enjoy-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #018dc4;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 26px/normal Tahoma, Geneva, sans-serif;
+  color: rgba(249,247,247,0.9);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  word-spacing: 8px;
+  background: rgba(19,140,239,0.9);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.speaker {
+	height: 40px;
+	width: 40px;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+
+	span {
+		display: block;
+		width: 8px;
+		height: 8px;
+		background: #fff;
+		margin: 11px 0 0 2px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-color: transparent #fff transparent transparent;
+			border-width: 10px 14px 10px 15px;
+			left: -13px;
+			top: 5px;
+		}
+
+		&:before {
+			transform: rotate(45deg);
+			border-radius: 0 50px 0 0;
+			content: '';
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			border-style: double;
+			border-color: #fff;
+			border-width: 7px 7px 0 0;
+			left: 18px;
+			top: 9px;
+			transition: all 0.2s ease-out;
+		}
+	}
+
+	&:hover {
+
+		span:before {
+			transform: scale(.8) translate(-3px, 0) rotate(42deg);		
+    }
+	}
+  
+  &.mute {
+    span:before {
+			transform: scale(.5) translate(-15px, 0) rotate(36deg);
+      opacity: 0;
+    }
+  }
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 90%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: solid 2px #c9c9c9
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+
+</style>
+</head>
+<body>
+<div class="blended_grid">
+<span>
+ <a href="#">
+<img src="ss.png" class="speaker" onClick="mute();">
+</a>
+</span>
+<h1 class="cus-header" >Workstation Launcher</h1><br><br> <form>
+	<audio id="bg-audio" src="http://nojsgame.majorov.su/assets/music/bg.mp3" loop autoplay></audio>
+	
+</form>
+<div class="pageColumnLeft">
+<h2 class="cus-header2" >Social</h2><br><br><br>
+<form action="" method="get" >
+  <input class="css-checkbox" type="checkbox" name="work" id="fb" value="start chrome.exe https://www.facebook.com/" onClick="WriteToFile(this.form);"> <label class="css-label" for="fb">Facebook</label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="linkd" value="start chrome.exe https://www.linkedin.com/in/bharat-dudeja/" onClick="WriteToFile(this.form);"> <label class="css-label" for="linkd">LinkedIn</label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="gmail" value="start chrome.exe https://mail.google.com/mail/u/0/#inbox" onClick="WriteToFile(this.form);"> <label class="css-label" for="gmail">Gmail</label><br>
+  <br><br>
+  </form>
+<form>
+  <input name="search" type="text" maxlength="512" id="search"  title="" placeholder="Forward slash(\) to back slash(/)" class="focus"/><br>
+   <input class="enjoy-css" type="submit" value="Transform and copy" onClick="transform();" />
+
+
+</form>
+</div>
+<div class="pageColumnMid">
+
+<script type="text/javascript" language="javascript">
+    function RunFile() {
+    WshShell = new ActiveXObject("WScript.Shell");
+    WshShell.Run("C:\\Users\\bdudejax\\Desktop\\test.bat", 1, false);
+    }
+</script>
+ <script type="text/javascript">
+    function WriteToFile(frm){	
+	var fso = new ActiveXObject("Scripting.FileSystemObject"); 
+var s1=fso.CreateTextFile("C:\\Users\\bdudejax\\Desktop\\test.bat", true);
+s1.WriteLine("@echo off");
+s1.close();
+var s = fso.OpenTextFile("C:\\Users\\bdudejax\\Desktop\\test.bat",8, true); 
+	var selchbox = [];// array that will store the value of selected checkboxes
+  // gets all the input tags in frm, and their number
+  var inpfields = document.getElementsByName('work');
+  var nr_inpfields = inpfields.length;
+  
+  // traverse the inpfields elements, and adds the value of selected (checked) checkbox in selchbox
+  for(var i=0; i<nr_inpfields; i++) {
+    if(inpfields[i].checked == true){
+	
+	s.WriteLine(inpfields[i].value); 
+	 
+	}
+  }
+	
+	s.Close();
+
+
+}
+ 
+function reset1(){ 
+var fso = new ActiveXObject("Scripting.FileSystemObject"); 
+fso.DeleteFile("C:\\Users\\bdudejax\\Desktop\\test.bat", true); 
+
+s.Close(); 
+
+} 
+function mute(){
+var audioElm = document.getElementById('bg-audio'); audioElm.muted = !audioElm.muted;}
+
+function transform(){
+var path1=document.getElementById('search').value;
+var path2=path1.replace(/\\/g, '\/');
+document.getElementById('search').value=path2;
+window.prompt("Copy to clipboard: Ctrl+C, Enter", path2);
+
+}
+    </script>
+	<h2 class="cus-header2" >Work</h2><br><br><br>
+<form action="" method="get" >
+  <input class="css-checkbox" type="checkbox" name="work" id="git" value="start chrome.exe http://github.intel.com" onClick="WriteToFile(this.form);"> <label class="css-label" for="git">Github</label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="aem" value="start C:\Users\bdudejax\Desktop\AEM6.1-author\cq-author-p4502.jar" onClick="WriteToFile(this.form);"> <label class="css-label" for="aem">AEM Local Author</label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="out" value="start C:\\Users\\bdudejax\\Desktop\\apps\\oo.lnk" onClick="WriteToFile(this.form);"> <label class="css-label" for="out">Outlook</label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="lync" value="start C:\\Users\\bdudejax\\Desktop\\apps\\ss.lnk" onClick="WriteToFile(this.form);"> <label class="css-label" for="lync">Skype </label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="eam" value="start chrome.exe https://eam.intel.com/eamweb/" onClick="WriteToFile(this.form);"> <label class="css-label" for="eam">Request access</label><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="infy" value="start chrome.exe https://iconnect.infosysapps.com/vpn/index_sc.html" onClick="WriteToFile(this.form);"> <label class="css-label" for="infy">Infy Machine</label><br>
+  <br><br><br>
+  <input class="enjoy-css" type="submit" value="DO IT!" onClick="RunFile();" />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input class="enjoy-css" type="button" value="RESET!" onClick="reset();" />
+</form>
+
+</div>
+<div class="pageColumnRight">
+<h2 class="cus-header2" >Path</h2><br><br><br>
+<form action="" method="get" >
+  <input class="css-checkbox" type="checkbox" name="work" id="tes" value="start explorer.exe C:\" onClick="WriteToFile(this.form);"> <label class="css-label" for="tes">C:\ test</label><br>
+  <br><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="intellij" value="cd c:\workspaces\bdudejax\intelcom && gradlew\gradlew.env.bat && gr intellij " onClick="WriteToFile(this.form);"> <label class="css-label" for="intellij">Intellij</label><br>
+  <br><br>
+  <input class="css-checkbox" type="checkbox" name="work" id="cq" value="cd c:\workspaces\bdudejax\intelcom && gradlew\gradlew.env.bat && gr installcq" onClick="WriteToFile(this.form);"> <label class="css-label" for="cq">Install cq</label><br>
+  <br><br>
+  
+</form>
+</div>
+
+</div>
+</body>
+</html>
